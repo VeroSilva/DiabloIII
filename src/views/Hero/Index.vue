@@ -6,6 +6,7 @@
     <b-row>
       <b-col md="12" lg="8" order-lg="2">
         <BaseLoading v-if="isLoadingItems"/>
+        <HeroItems v-if="items" :items="items"/>
       </b-col>
 
       <b-col md="12" lg="4" order-lg="1">
@@ -25,6 +26,7 @@ import BaseLoading from '@/components/BaseLoading'
 import HeroDetailHeader from './HeroDetailHeader'
 import HeroAttributes from './HeroAttributes/Index'
 import HeroSkills from './HeroSkills/Index'
+import HeroItems from './HeroItems/Index'
 import { getApiHero, getApiDetailedHeroItems } from '@/api/search'
 
 export default {
@@ -34,7 +36,8 @@ export default {
     BaseLoading,
     HeroDetailHeader,
     HeroAttributes,
-    HeroSkills
+    HeroSkills,
+    HeroItems
   },
   data () {
     return {
