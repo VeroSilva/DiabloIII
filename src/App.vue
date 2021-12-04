@@ -40,4 +40,5 @@ export default {
     -moz-osx-font-smoothing grayscale
     color #ffffff
     background-color #15202b
+    min-height 100vh
 </style>
